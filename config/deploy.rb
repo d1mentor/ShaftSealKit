@@ -13,7 +13,7 @@ set :deploy_to, "/home/deploy/ShaftSealKit"
 
 append :linked_files, 'config/database.yml', 'config/credentials.yml.enc', 'config/master.key'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle',
-                     'public/system', 'public/uploads', 'node_modules'
+                     'public/system', 'public/uploads'
 
 # Only keep the last 5 releases to save disk space
 set :keep_releases, 5

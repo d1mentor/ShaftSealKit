@@ -7,6 +7,7 @@ set :application, "ShaftSealKit"
 set :repo_url, "git@github.com:d1mentor/ShaftSealKit.git"
 
 set :branch, "main"
+set :bundle_flags, "--no-deployment"
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/ShaftSealKit"

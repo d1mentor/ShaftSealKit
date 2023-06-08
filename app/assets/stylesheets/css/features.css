@@ -1,0 +1,45 @@
+.features {
+  padding: 40px 0;
+  background: #f3f3f3;
+}
+
+.features-item {
+  padding: 10px;
+}
+
+.benefits {
+	list-style: none;
+	text-align: left;
+}
+
+.benefits li:before {
+	content: '\2713  ';
+}
+
+.content{
+  margin-left: 30px;
+}
+
+.content ul{
+  margin-left: 30px;
+}
+
+.content h3{
+  font-size: 22px;
+  font-weight: 550;
+  line-height: 30px;
+}
+
+.copyright{
+  background-color: #333;
+  color: #f3f3f3;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.copyright-link{
+  text-decoration: none;
+  color: #f3f3f3;
+}

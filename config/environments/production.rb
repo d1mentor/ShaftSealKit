@@ -22,7 +22,7 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     domain: 'shaftsealkit.com',
     user_name: 'gerasimenkot92@gmail.com',
-    password: 'ЗАПОЛНИ МЕНЯ',
+    password: ENV["email_psw"],
     authentication: :plain,
     enable_starttls_auto: false,
     openssl_verify_mode: 'none'

@@ -11,7 +11,7 @@ set :branch, "main"
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/ShaftSealKit"
 
-append :linked_files, 'config/database.yml', 'config/credentials.yml.enc', 'config/master.key'
+append :linked_files, 'config/database.yml', 'config/credentials.yml.enc', 'config/master.key', 'config/application.yml'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle',
                      'public/system', 'public/uploads'
 

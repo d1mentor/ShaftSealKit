@@ -37,9 +37,9 @@ Rails.application.configure do
     domain: 'shaftsealkit.com',
     user_name: 'gerasimenkot92@gmail.com',
     password: ENV["email_psw"],
-    authentication: :plain,
-    enable_starttls_auto: false,
-    openssl_verify_mode: 'none'
+    authentication: :plain
+    # enable_starttls_auto: false,
+    # openssl_verify_mode: 'none'
   }
 
   # Store uploaded files on the local file system (see config/storage.yml for options).

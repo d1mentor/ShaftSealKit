@@ -23,9 +23,9 @@ Rails.application.configure do
     domain: 'shaftsealkit.com',
     user_name: 'gerasimenkot92@gmail.com',
     password: ENV["email_psw"],
-    authentication: :plain,
-    enable_starttls_auto: false,
-    openssl_verify_mode: 'none'
+    authentication: :plain
+    # enable_starttls_auto: false,
+    # openssl_verify_mode: 'none'
   }
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]

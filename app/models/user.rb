@@ -30,7 +30,7 @@ class User < ApplicationRecord
       token_credential_uri: 'https://accounts.google.com/o/oauth2/token',
       client_id: ENV['google_id'],
       client_secret: ENV['google_secret'],
-      scope: Google::Apis::GmailV1::AUTH_GMAIL_LABELS, # Измените область доступа на свои нужды
+      scope: 'https://www.googleapis.com/auth/gmail.readonly', # Измените область доступа на свои нужды
       redirect_uri: 'https://shaftsealkit.com',
       access_token: self.token,
       refresh_token: self.refresh_token

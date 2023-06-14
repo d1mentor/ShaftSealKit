@@ -26,14 +26,14 @@ class User < ApplicationRecord
 
     # Создаем объект авторизации
     client.authorization = Google::Auth::UserRefreshCredentials.new(
+      authorization_uri: 'https://accounts.google.com/o/oauth2/auth',
+      token_credential_uri: 'https://accounts.google.com/o/oauth2/token',
       client_id: ENV['google_id'],
       client_secret: ENV['google_secret'],
       scope: Google::Apis::GmailV1::AUTH_GMAIL_MODIFY, # Измените область доступа на свои нужды
       redirect_uri: 'https://shaftsealkit.com',
-      additional_parameters: {
-        'access_token' => self.token,
-        'refresh_token' => self.refresh_token
-      }
+      access_token: self.token,
+      refresh_token: self.refresh_token
     )
 
     # self.update(token: client.authorization.access_token)

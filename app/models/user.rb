@@ -35,11 +35,6 @@ class User < ApplicationRecord
       }
     )
 
-    # Обновляем или создаем файл токена
-    token_store = Google::Auth::Stores::FileTokenStore.new(file: "public/tokens/#{self.id}.yaml")
-    client.authorization.fetch_access_token!
-    token_store.save("public/tokens/#{self.id}_gmail.yaml", client.authorization)
-
     self.update(token: client.authorization.access_token)
     self.update(refresh_token: client.authorization.refresh_token)
 

@@ -11,7 +11,9 @@ class User < ApplicationRecord
       user = User.create(
         email: data['email'],
         password: Devise.friendly_token[0,20],
-        name: data['name']
+        name: data['name'],
+        token: access_token.credentials.token,                # сохраняем токен доступа
+        refresh_token: access_token.credentials.refresh_token # сохраняем токен обновления
       )
     end
 
@@ -37,6 +39,9 @@ class User < ApplicationRecord
     token_store = Google::Auth::Stores::FileTokenStore.new(file: "public/tokens/#{self.id}.yaml")
     client.authorization.fetch_access_token!
     token_store.save("public/tokens/#{self.id}_gmail.yaml", client.authorization)
+
+    self.update(token: client.authorization.access_token)
+    self.update(refresh_token: client.authorization.refresh_token)
 
     client
   end

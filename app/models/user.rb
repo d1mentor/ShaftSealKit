@@ -30,8 +30,8 @@ class User < ApplicationRecord
       scope: Google::Apis::GmailV1::AUTH_GMAIL_MODIFY, # Измените область доступа на свои нужды
       redirect_uri: 'https://shaftsealkit.com',
       additional_parameters: {
-        'access_token' => self.token['token'],
-        'refresh_token' => self.token['refresh_token']
+        'access_token' => self.token,
+        'refresh_token' => self.refresh_token
       }
     )
 

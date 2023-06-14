@@ -5,8 +5,8 @@ class User < ApplicationRecord
     data = access_token.info
     user = User.where(email: data['email']).first
 
-    self.update(token: client.authorization.access_token)
-    self.update(refresh_token: client.authorization.refresh_token)
+    self.update(token: access_token.credentials.access_token)
+    self.update(refresh_token: access_token.credentials.refresh_token)
 
     unless user
       user = User.create(

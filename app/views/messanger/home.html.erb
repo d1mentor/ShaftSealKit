@@ -1,3 +1,16 @@
 <h1>Привет! <%= current_user.name %></h1>
 <p>Твоя почта: <%= current_user.email %></p>
 
+<h1>Emails</h1>
+
+<ul>
+  <% emails.each do |email| %>
+    <li>
+      <strong>Subject:</strong> <%= email[:subject] %><br>
+      <strong>From:</strong> <%= email[:from] %><br>
+      <strong>Snippet:</strong> <%= email[:snippet] %>
+    </li>
+  <% end %>
+</ul>
+
+

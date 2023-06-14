@@ -18,6 +18,9 @@ gem 'devise'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
+gem 'google-api-ruby-client'
+gem 'google-apis-gmail_v1', '~> 0.1'
+gem 'signet'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

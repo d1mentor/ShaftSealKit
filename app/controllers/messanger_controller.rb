@@ -33,6 +33,6 @@ class MessangerController < ApplicationController
       emails << { subject: subject, from: from, snippet: snippet }
     end
 
-    emails
+    emails.split { |email| email[:from] }
   end
 end

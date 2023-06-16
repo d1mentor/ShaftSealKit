@@ -14,3 +14,31 @@
 </ul>
 
 
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <% @emails.each do |email| %>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapse<%= email.first[:from] %>">
+        <%= email.first[:from] %>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse<%= email.first[:from] %>" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <ul>
+          <% email.each do |mail| %>
+            <li>
+              <strong>Subject:</strong> <%= mail[:subject] %><br>
+              <strong>From:</strong> <%= mail[:from] %><br>
+              <strong>Snippet:</strong> <%= mail[:snippet] %>
+            </li>
+            <strong>-----------------------------------------------------</strong>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <% end %>
+</div>
+
+

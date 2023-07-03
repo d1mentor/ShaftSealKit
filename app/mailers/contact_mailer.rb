@@ -1,9 +1,8 @@
 class ContactMailer < ApplicationMailer
     default from: "gerasimenkot92@gmail.com"
-    
-    banlist = ['Robertgraib']
 
     def send_email(name, email, message)
+      banlist = ['Robertgraib']
       @name = name
       @message = message
       @email = email

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @supplier.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @supplier.location %>
+</p>
+
+<p>
+  <strong>Vat:</strong>
+  <%= @supplier.vat %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @supplier.tags %>
+</p>
+
+<p>
+  <strong>Additional:</strong>
+  <%= @supplier.additional %>
+</p>
+
+<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
+<%= link_to 'Back', suppliers_path %>

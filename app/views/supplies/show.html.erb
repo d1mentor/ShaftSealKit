@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Additional:</strong>
+  <%= @supply.additional %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @supply.tags %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @supply.status %>
+</p>
+
+<p>
+  <strong>Offer:</strong>
+  <%= @supply.offer_id %>
+</p>
+
+<p>
+  <strong>Files:</strong>
+  <%= @supply.files %>
+</p>
+
+<p>
+  <strong>Shipping type:</strong>
+  <%= @supply.shipping_type %>
+</p>
+
+<%= link_to 'Edit', edit_supply_path(@supply) %> |
+<%= link_to 'Back', supplies_path %>

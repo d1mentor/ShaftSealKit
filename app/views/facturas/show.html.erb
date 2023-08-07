@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Facturownia:</strong>
+  <%= @factura.facturownia_id %>
+</p>
+
+<p>
+  <strong>Additional:</strong>
+  <%= @factura.additional %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @factura.tags %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @factura.status %>
+</p>
+
+<p>
+  <strong>Bid:</strong>
+  <%= @factura.bid_id %>
+</p>
+
+<p>
+  <strong>Offer:</strong>
+  <%= @factura.offer_id %>
+</p>
+
+<p>
+  <strong>Files:</strong>
+  <%= @factura.files %>
+</p>
+
+<p>
+  <strong>Sum:</strong>
+  <%= @factura.sum %>
+</p>
+
+<p>
+  <strong>Sum currency:</strong>
+  <%= @factura.sum_currency %>
+</p>
+
+<%= link_to 'Edit', edit_factura_path(@factura) %> |
+<%= link_to 'Back', facturas_path %>

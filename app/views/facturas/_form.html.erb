@@ -1,0 +1,62 @@
+<%= form_with(model: factura) do |form| %>
+  <% if factura.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(factura.errors.count, "error") %> prohibited this factura from being saved:</h2>
+
+      <ul>
+        <% factura.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :facturownia_id %>
+    <%= form.text_field :facturownia_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additional %>
+    <%= form.text_field :additional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tags %>
+    <%= form.text_field :tags %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bid_id %>
+    <%= form.number_field :bid_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :offer_id %>
+    <%= form.number_field :offer_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :files %>
+    <%= form.text_field :files %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sum %>
+    <%= form.text_field :sum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sum_currency %>
+    <%= form.text_field :sum_currency %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

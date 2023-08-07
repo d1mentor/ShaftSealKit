@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  facturownia_id: MyString
+  additional: MyString
+  tags: MyString
+  status: 1
+  bid_id: 1
+  offer_id: 1
+  files: 
+  sum: 1.5
+  sum_currency: MyString
+
+two:
+  facturownia_id: MyString
+  additional: MyString
+  tags: MyString
+  status: 1
+  bid_id: 1
+  offer_id: 1
+  files: 
+  sum: 1.5
+  sum_currency: MyString

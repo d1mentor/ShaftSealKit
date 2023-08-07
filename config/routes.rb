@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :facturas
   resources :offers
   resources :bids
   resources :kits

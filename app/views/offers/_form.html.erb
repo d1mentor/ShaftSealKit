@@ -1,0 +1,62 @@
+<%= form_with(model: offer) do |form| %>
+  <% if offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+        <% offer.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :incoming %>
+    <%= form.check_box :incoming %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.number_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplier_id %>
+    <%= form.number_field :supplier_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_id %>
+    <%= form.number_field :client_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bid_id %>
+    <%= form.number_field :bid_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :files %>
+    <%= form.text_field :files %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tags %>
+    <%= form.text_field :tags %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additional %>
+    <%= form.text_field :additional %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

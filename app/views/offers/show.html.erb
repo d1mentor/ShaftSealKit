@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Incoming:</strong>
+  <%= @offer.incoming %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @offer.type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @offer.status %>
+</p>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @offer.supplier_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @offer.client_id %>
+</p>
+
+<p>
+  <strong>Bid:</strong>
+  <%= @offer.bid_id %>
+</p>
+
+<p>
+  <strong>Files:</strong>
+  <%= @offer.files %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @offer.tags %>
+</p>
+
+<p>
+  <strong>Additional:</strong>
+  <%= @offer.additional %>
+</p>
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

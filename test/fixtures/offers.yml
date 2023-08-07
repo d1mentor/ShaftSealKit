@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  incoming: false
+  type: 1
+  status: 1
+  supplier_id: 1
+  client_id: 1
+  bid_id: 1
+  files: 
+  tags: MyString
+  additional: MyString
+
+two:
+  incoming: false
+  type: 1
+  status: 1
+  supplier_id: 1
+  client_id: 1
+  bid_id: 1
+  files: 
+  tags: MyString
+  additional: MyString

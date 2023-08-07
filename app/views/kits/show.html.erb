@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Offer:</strong>
+  <%= @kit.offer_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @kit.category_id %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @kit.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @kit.height %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @kit.width %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @kit.tags %>
+</p>
+
+<p>
+  <strong>Additional:</strong>
+  <%= @kit.additional %>
+</p>
+
+<%= link_to 'Edit', edit_kit_path(@kit) %> |
+<%= link_to 'Back', kits_path %>

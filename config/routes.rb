@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :kits
   resources :products
   resources :spare_parts
   resources :categories

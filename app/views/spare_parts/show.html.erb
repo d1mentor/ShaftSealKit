@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @spare_part.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @spare_part.category_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @spare_part.description %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @spare_part.tags %>
+</p>
+
+<p>
+  <strong>Images:</strong>
+  <%= @spare_part.images %>
+</p>
+
+<p>
+  <strong>Files:</strong>
+  <%= @spare_part.files %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @spare_part.manufacturer %>
+</p>
+
+<p>
+  <strong>Kit:</strong>
+  <%= @spare_part.kit_id %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @spare_part.weight %>
+</p>
+
+<%= link_to 'Edit', edit_spare_part_path(@spare_part) %> |
+<%= link_to 'Back', spare_parts_path %>
